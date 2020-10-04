@@ -2,34 +2,43 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
 
     string cadena;
-    int a;
-    float b;
-    short c;
-    double d;
-    long e;
 
     getline(cin, cadena);
     //cout << cadena.size() << endl;
-    cout << sizeof(cadena) << endl;
+    //cout << sizeof(cadena) << endl;
 
-    cin >> a;
-    cout << sizeof(a) << endl;
+    if (cadena == "float")
+    {
+        cout << sizeof(cadena) << endl;
+    }
+    else if (cadena == "char")
+    {
 
-    cin >> b;
-    cout << sizeof(b) << endl;
+        cout << sizeof(cadena) << endl;
+    }
+    else if (cadena == "int")
+    {
 
-    cin >> c;
-    cout << sizeof(c) << endl;
+        cout << sizeof(cadena) << endl;
+    }
+    else if (cadena == "short")
+    {
 
-    cin >> d;
-    cout << sizeof(d) << endl;
-    
-    cin >> e;
-    cout << sizeof(d) << endl;
+        cout << sizeof(cadena) << endl;
+    }
+    else if (cadena == "double")
+    {
 
-    
+        cout << sizeof(cadena) << endl;
+    }
+    else if (cadena == "long")
+    {
+
+        cout << sizeof(cadena) << endl;
+    }
     return 0;
 }
